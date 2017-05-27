@@ -1,0 +1,10 @@
+hu\unideb\inf\pk\RunDiary\ui\RunController.class
+hu\unideb\inf\pk\RunDiary\App.class
+hu\unideb\inf\pk\RunDiary\ui\AppStarter.class
+hu\unideb\inf\pk\RunDiary\database\RunDAOImpl.class
+hu\unideb\inf\pk\RunDiary\database\RunDAOFactory.class
+hu\unideb\inf\pk\RunDiary\database\RunDAO.class
+hu\unideb\inf\pk\RunDiary\Statiscticss.class
+hu\unideb\inf\pk\RunDiary\database\RunEntity.class
+hu\unideb\inf\pk\RunDiary\Calculator.class
+hu\unideb\inf\pk\RunDiary\ui\AddNewController.class
