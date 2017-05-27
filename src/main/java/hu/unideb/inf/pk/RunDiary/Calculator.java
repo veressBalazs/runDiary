@@ -26,9 +26,9 @@ public class Calculator {
 	
 	public double calculateCalories(){
 		
-		if (calculateAvrageSpeed() < 8) return this.time*10.01;
-		else if(calculateAvrageSpeed() < 18) return this.time*15.65;
-		else return this.time*18.76;
+		if (this.calculateAvrageSpeed() < 8) return this.time*10;
+		else if(this.calculateAvrageSpeed() < 18) return this.time*15;
+		else return this.time*18;
 	}
 	
 	

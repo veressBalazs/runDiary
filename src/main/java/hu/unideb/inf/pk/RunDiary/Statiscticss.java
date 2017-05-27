@@ -17,7 +17,7 @@ public class Statiscticss {
 	public String currentMonth() {
 		Double counter = 0.0;
 		for (RunEntity runEntity : runEntities) {
-			if (runEntity.getDate().getMonth().equals(LocalDate.now().getMonth())) {
+			if (runEntity.getDate().getMonth().equals(LocalDate.now().getMonth()) && runEntity.getDate().getYear() == (LocalDate.now().getYear())) {
 				counter += runEntity.getDistance();
 
 			}
