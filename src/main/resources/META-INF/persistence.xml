@@ -6,17 +6,20 @@
    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
 	version="1.0">
 
-<persistence-unit name="run">
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	<persistence-unit name="run" transaction-type="RESOURCE_LOCAL">
+		<class>hu.unideb.inf.pk.RunDiary.database.RunEntity</class>
 		<properties>
-			<property name="hibernate.archive.autodetection" value="class" />
-			       <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect"/>
-<!-- 			<property name="hibernate.dialect" value="com.mysema.query.jpa.support.ExtendedDerbyDialect" /> -->
-			<property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.EmbeddedDriver" />
-			<property name="hibernate.connection.url" value="jdbc:derby:E:\RunDB;create=true" />
-			<property name="hibernate.show_sql" value="true"/>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="hibernate.connection.url" value="jdbc:derby:target/runDB;create=true" />
+			<property name="javax.persistence.jdbc.user" value="" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect" />
+			<property name="show_sql" value="true" />
+						<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.flushMode" value="FLUSH_AUTO" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.temp.use_jdbc_metadata_defaults"
+				value="false" />
 		</properties>
 	</persistence-unit>
 

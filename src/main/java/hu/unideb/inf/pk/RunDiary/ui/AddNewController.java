@@ -1,7 +1,7 @@
 package hu.unideb.inf.pk.RunDiary.ui;
 
 import java.net.URL;
-import java.time.Duration;
+
 import java.util.ResourceBundle;
 
 import hu.unideb.inf.pk.RunDiary.Calculator;
@@ -9,14 +9,15 @@ import hu.unideb.inf.pk.RunDiary.database.RunDAO;
 import hu.unideb.inf.pk.RunDiary.database.RunDAOFactory;
 import hu.unideb.inf.pk.RunDiary.database.RunEntity;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Paint;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import javafx.stage.Stage;
 
 public class AddNewController implements Initializable {
@@ -26,6 +27,8 @@ public class AddNewController implements Initializable {
 	private Boolean edit =Boolean.FALSE;
 	
 	private RunDAOFactory daoFactory;
+	private static Logger	
+	logger = LoggerFactory.getLogger(AddNewController.class);
 
 	private RunEntity runEntity;
 
@@ -82,7 +85,7 @@ public class AddNewController implements Initializable {
 			runDao.createEntry(runEntity);
 			onCancleBt();
 		} catch (Exception e) {
-			
+			logger.error("All Fields must be filled");
 			warnL.setText("Az összes mező kitöltése kötelező!");
 		}
 

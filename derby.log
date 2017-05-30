@@ -1,13 +1,10 @@
 ----------------------------------------------------------------
-Sat May 27 21:32:59 CEST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015c-4b65-bf6b-000005900000 
-on database directory E:\RunDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
-Loaded from file:/C:/Users/veres/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+Tue May 30 16:22:29 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-015c-59bc-8eba-000005aa31b8 
+on database directory E:\RunDB  with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/Users/veres/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_111-b14
 user.dir=C:\Users\veres\workspace\RunDiary
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
